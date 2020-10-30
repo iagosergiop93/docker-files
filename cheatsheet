@@ -1,0 +1,8 @@
+# Command for running mysql on command-line interface:
+docker-compose exec  mysql-development mysql -uroot -p01020304 testapp
+
+# Command for spin up Mysql container
+docker-compose up
+
+# Command for shut down Mysql container
+docker-compose down

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  revtaroom:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: r00t@dmin
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: P@ssw0rd
+      MYSQL_DATABASE: example
+    ports:
+      - "3308:3306"
+    volumes:
+      - $PWD/example-db:/var/lib/mysql
